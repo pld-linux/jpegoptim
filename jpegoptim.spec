@@ -2,13 +2,14 @@ Summary:	Utility for optimizing and compressing JPEG files.
 Summary(pl):	Program do optymalizacji i kompresji plików JPEG.
 Name:		jpegoptim
 Version:	1.2.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://www.cc.jyu.fi/~tjko/src/%{name}-%{version}.tar.gz
 # Source0-md5:	c7e92417badac7dcffab4245c113871c
 URL:		http://www.iki.fi/tjko/projects.html
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libjpeg-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +29,7 @@ przekodowanie obrazu z podan± przez u¿ytkownika jako¶ci±.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub aux
 %{__autoconf}
 %configure
 %{__make}
