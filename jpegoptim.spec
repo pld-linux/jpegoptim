@@ -5,9 +5,9 @@ Version:	1.2.2
 Release:	1
 License:	GPL
 Group:		Applications/Graphics
-URL:		http://www.iki.fi/tjko/projects.html
 Source0:	http://www.cc.jyu.fi/~tjko/src/%{name}-%{version}.tar.gz
 # Source0-md5:	c7e92417badac7dcffab4245c113871c
+URL:		http://www.iki.fi/tjko/projects.html
 BuildRequires:	autoconf
 BuildRequires:	libjpeg-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -22,7 +22,7 @@ re-encoding the image using user specified image quality factor.
 Jpegoptim potrafi optymalizowaæ i kompresowaæ pliki jpeg. Program
 dokonuje bezstratnej optymalizacji opartej na optymalizacji tablic
 Huffmana. Optymalizacja stratna (kompresja) jest dokonywana przez
-przekodowanie obrazu z podan± przez u¿ytkowika jako¶ci±.
+przekodowanie obrazu z podan± przez u¿ytkownika jako¶ci±.
 
 %prep
 %setup -q
@@ -34,13 +34,15 @@ przekodowanie obrazu z podan± przez u¿ytkowika jako¶ci±.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install INSTALL_ROOT=$RPM_BUILD_ROOT
+
+%{__make} install \
+	INSTALL_ROOT=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
-%doc README
