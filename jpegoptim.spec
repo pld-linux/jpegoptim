@@ -1,5 +1,5 @@
 Summary:	Utility for optimizing and compressing JPEG files.
-Summary(pl):	Program do optymalizacji i kompresji plików JPEG.
+Summary(pl.UTF-8):   Program do optymalizacji i kompresji plikÃ³w JPEG.
 Name:		jpegoptim
 Version:	1.2.2
 Release:	2
@@ -19,11 +19,11 @@ lossless optimization, which is based on optimizing the Huffman
 tables. So called, "lossy" optimization (compression) is done by
 re-encoding the image using user specified image quality factor.
 
-%description -l pl
-Jpegoptim potrafi optymalizowaæ i kompresowaæ pliki jpeg. Program
+%description -l pl.UTF-8
+Jpegoptim potrafi optymalizowaÄ‡ i kompresowaÄ‡ pliki jpeg. Program
 dokonuje bezstratnej optymalizacji opartej na optymalizacji tablic
 Huffmana. Optymalizacja stratna (kompresja) jest dokonywana przez
-przekodowanie obrazu z podan± przez u¿ytkownika jako¶ci±.
+przekodowanie obrazu z podanÄ… przez uÅ¼ytkownika jakoÅ›ciÄ….
 
 %prep
 %setup -q
