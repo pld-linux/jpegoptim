@@ -1,5 +1,5 @@
 Summary:	Utility for optimizing and compressing JPEG files.
-Summary(pl.UTF-8):   Program do optymalizacji i kompresji plików JPEG.
+Summary(pl.UTF-8):	Program do optymalizacji i kompresji plików JPEG.
 Name:		jpegoptim
 Version:	1.2.2
 Release:	2
