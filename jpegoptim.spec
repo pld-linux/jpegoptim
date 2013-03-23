@@ -1,12 +1,12 @@
 Summary:	Utility for optimizing and compressing JPEG files
 Summary(pl.UTF-8):	Program do optymalizacji i kompresji plików JPEG.
 Name:		jpegoptim
-Version:	1.2.5
+Version:	1.3.0
 Release:	1
 License:	GPL v2+
 Group:		Applications/Graphics
 Source0:	http://www.kokkonen.net/tjko/src/%{name}-%{version}.tar.gz
-# Source0-md5:	68a6d524449c5d0980b61eecd8d049a0
+# Source0-md5:	2864f8992adbb23c719a8b7c64f7b054
 URL:		http://www.kokkonen.net/tjko/projects.html
 BuildRequires:	autoconf
 BuildRequires:	automake
