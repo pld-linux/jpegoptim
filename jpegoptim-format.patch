@@ -1,0 +1,11 @@
+--- jpegoptim-1.4.0/jpegoptim.c.orig	2014-05-13 06:12:59.000000000 +0200
++++ jpegoptim-1.4.0/jpegoptim.c	2014-05-24 11:12:22.796532969 +0200
+@@ -576,7 +576,7 @@
+ 	     (dinfo.progressive_mode?'P':'N'));
+ 
+      if (!csv) {
+-       fprintf(LOG_FH,marker_str);
++       fputs(marker_str, LOG_FH);
+        if (dinfo.saw_Adobe_marker) fprintf(LOG_FH,"Adobe ");
+        if (dinfo.saw_JFIF_marker) fprintf(LOG_FH,"JFIF ");
+      }
